@@ -1,53 +1,36 @@
-#infndef animal.h
-#define animal.h
 #include <iostream>
 #include <string>
+#include "animal.h"
 using namespace std;
 
-class animal{
+class enclosure : public animal{
   
-  private :
-  
-  string name ;
-  int age ;
-  bool ishungry;
-  
-  public :
-   animal (string name , int age , bool ishungry ){
-     
-     this->name=name;
-     this->age=age;
-     this->ishungry=ishungry;
-   }
-  virtual void display(){
-    
-    cout<<"name"<<name<<endl;
-    cout<<"age"<<age<<endl;
-    cout<<"ishungry"<<ishungry<<endl;
-  }
-  
-  virtualvoid feed(){
-    if (animal ishungry){
-      cout<<"animal is hungry"<<endl;
-       return feed ;
+  private:
+  array [animal]*;
+  int capacity;
+  int currentCount;
 
-    }
-    else {
-      cout<<"animal is not hungry"<<endl;
-      return dont feed ;
-    }
-  }
+public:
+enclosure(array animal ,int capacity,int currentCount,string name , int age , bool ishungry){
+  this->animal=animal;
+  this->capacity=capacity;
+  this->currentCount=currentCount;
+
+}
+void addanimal(animal*a){
+  add animal : enclosure
   
-  subclass mammal{
-    string FurColor
-    
-  }
-  subclass bird{
-    float wingSpan;
-    
-  }
-  subclass reptile{
-    bool isVenomous;
-  }
-#endif  
-};
+  
+  
+}
+void displayAnimal(){
+  cout<<animalinfo<<endl;
+  cout<<"mammal"<<mammal<<endl;
+  cout<<"bird"<<bird<<endl;
+  cout<<"reptile"<<reptile<<endl;
+}
+
+#ifend
+}:
+
+
