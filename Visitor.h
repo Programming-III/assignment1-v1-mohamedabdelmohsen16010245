@@ -1,53 +1,26 @@
-#infndef animal.h
-#define animal.h
+#ifndef vistor.h
+#indefine vistor.h
 #include <iostream>
-#include <string>
+#include<string>
 using namespace std;
 
-class animal{
+class vistor {
   
   private :
   
-  string name ;
-  int age ;
-  bool ishungry;
+  string vistorName;
+  int ticketsBought;
   
-  public :
-   animal (string name , int age , bool ishungry ){
-     
-     this->name=name;
-     this->age=age;
-     this->ishungry=ishungry;
-   }
-  virtual void display(){
-    
-    cout<<"name"<<name<<endl;
-    cout<<"age"<<age<<endl;
-    cout<<"ishungry"<<ishungry<<endl;
-  }
+  public vistor(string vistorName,int ticketsBought){
+  this->vistorName=vistorName;
+  this->ticketsBought=ticketsBought;
   
-  virtualvoid feed(){
-    if (animal ishungry){
-      cout<<"animal is hungry"<<endl;
-       return feed ;
-
-    }
-    else {
-      cout<<"animal is not hungry"<<endl;
-      return dont feed ;
-    }
-  }
   
-  subclass mammal{
-    string FurColor
-    
-  }
-  subclass bird{
-    float wingSpan;
-    
-  }
-  subclass reptile{
-    bool isVenomous;
-  }
-#endif  
+}
+void displayinfo(){
+  cout<<vistorName<<vistorName<<endl;
+  cout<<ticketsBought<<ticketsBought<<endl;
+  
+}
+#endif
 };
